@@ -1,0 +1,148 @@
+
+
+/* general ul style */
+.cbp-hrmenu ul {
+	margin: 0 !important;
+	padding: 0 !important;
+	list-style-type: none !important;
+}
+
+/* first level ul style */
+.cbp-hrmenu > ul,
+.cbp-hrmenu .cbp-hrsub-inner {
+	width: auto !important;
+	margin: 0 auto !important;
+	padding: 0em !important;
+}
+
+.cbp-hrmenu > ul > li {
+	display: inline-block !important;
+}
+
+.cbp-hrmenu > ul > li > a {
+	display: inline-block !important;
+}
+
+.cbp-hrmenu > ul > li > a:hover {
+	color: #47a3da !important;
+}
+
+.cbp-hrmenu > ul > li.cbp-hropen a,
+.cbp-hrmenu > ul > li.cbp-hropen > a:hover {
+	color: #fff;
+}
+
+/* sub-menu */
+.cbp-hrmenu .cbp-hrsub {
+	display: none;
+	z-index: 99999 !important;
+	position: absolute !important;
+	min-width: 770px !important;
+	right: -120px !important;
+}
+
+.cbp-hropen .cbp-hrsub {
+	display: block;
+}
+
+.cbp-hrmenu .cbp-hrsub-inner > div {
+	width: 33%;
+	float: left;
+	padding: 0 1em 0;
+}
+
+.cbp-hrmenu .cbp-hrsub-inner:before,
+.cbp-hrmenu .cbp-hrsub-inner:after {
+	content: " ";
+	display: table;
+}
+
+.cbp-hrmenu .cbp-hrsub-inner:after {
+	clear: both;
+}
+
+.cbp-hrmenu .cbp-hrsub-inner > div a {
+}
+
+.cbp-hrsub h4 {
+	margin: 0;
+}
+
+
+/* Examples for media queries */
+
+@media screen and (max-width: 52.75em) { 
+
+	.cbp-hrmenu {
+		font-size: 100%;
+	}
+	.cbp-hrmenu .cbp-hrsub {
+		min-width: 700px !important;
+	}	
+	.cbp-hrmenu .cbp-hrsub {
+		z-index: 99999 !important;
+		position: static !important;
+	}	
+
+}
+
+@media screen and (max-width: 43em) { 
+
+	.cbp-hrmenu {
+		font-size: 120%;
+		border: none;
+	}
+	.cbp-hrmenu .cbp-hrsub-inner > div {
+		width: 100%;
+		float: none;
+		padding: 0 2em;
+	}	
+
+	.cbp-hrmenu > ul,
+	.cbp-hrmenu .cbp-hrsub-inner {
+		width: 100%;
+		padding: 0;
+	}
+
+	.cbp-hrmenu .cbp-hrsub-inner {
+		padding: 0 2em;
+		font-size: 75%;
+	}
+
+	.cbp-hrmenu > ul > li {
+		display: block;
+	}
+
+	.cbp-hrmenu > ul > li > a { 
+		display: block;
+		padding: 1em 3em;
+	}
+
+	.cbp-hrmenu .cbp-hrsub { 
+		position: relative;
+	}
+
+	.cbp-hrsub h4 {
+		padding-top: 0.6em;
+	}
+	.cbp-hrmenu .cbp-hrsub {
+		z-index: 99999 !important;
+		position: static !important;
+	}
+}
+
+@media screen and (max-width: 36em) { 
+	.cbp-hrmenu .cbp-hrsub-inner > div {
+		width: 100%;
+		float: none;
+		padding: 0 2em;
+	}
+	.cbp-hrmenu .cbp-hrsub {
+		z-index: 99999 !important;
+		position: static !important;
+	}	
+
+}
+
+
+

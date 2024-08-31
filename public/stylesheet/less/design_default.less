@@ -1,0 +1,3558 @@
+//
+//      Theme Pixel Opacus
+//      Designed by PixelCoders
+//      Theme Pixel Opacus - Version 1.1 (2014)
+//______________________________________________________________
+
+
+@import "classes";
+@import "mixins";
+@import "variables";
+
+
+.home{
+    min-width: 540px;
+    .st-container{
+
+        .st-menu{
+            .bg(@w);
+            height: 100%;
+
+            .header-logo{
+                padding: 40px 10px !important;
+                h1{
+                    font-size: 33px !important;
+                    color: @w !important;
+                    strong{
+                        .bg(@color-trans-dark);
+                    }
+                    span{
+                        font-family: 'Francois One', sans-serif;
+                        color: @color !important;
+                    }
+                    small{
+                        color: @gray !important;
+                    }
+                }                            
+            }            
+
+            img{
+                width: 100px;
+                height: auto;
+                margin: 10% 30%;
+            }
+            h2{
+                color: @h2-1 !important;
+                .bg(@color);
+                margin-bottom: 20px !important;
+            }
+            .link-list{
+                padding: 0 0 20px 20px;
+                border-bottom: 1px solid @color;
+                li{
+                    a{
+                        font-size: 18px !important;
+                        line-height: 25px !important;
+                        padding: 10px !important;
+
+                        &:hover{
+                            box-shadow: inset 0 -1px rgba(0,0,0,0);
+                            color: @color !important;
+                            text-shadow: 0 0 1px rgba(255,255,255,0.5);                            
+                        }
+                    }
+                }
+            }
+
+            .social-list{
+                padding: 30px 0 !important;
+                border-bottom: 1px solid @color;
+                li{
+                    padding: 0 !important;
+                    a{
+                        padding: 0 !important;
+
+                        &:hover{
+                            box-shadow: inset 0 -1px rgba(0,0,0,0);
+                            color: @color !important;
+                            text-shadow: 0 0 1px rgba(255,255,255,0.5);                            
+                        }
+
+                        i{
+                            height: 34px!important;
+                            width: 34px!important;
+                            .bg(@color-trans-light);
+                            color: @color;
+                            border-radius: 50%;
+                            padding: 9px;
+                            font-size: 1em;
+                            .transition(@transition-1);
+
+                            &:hover{
+                                .bg(@color);
+                                color: @w;
+                            }
+                        }
+                    }
+                }                
+            }
+        }
+
+        .style-switch{
+            position: fixed;
+            right: -250px;
+            top: 100px;
+            z-index: 100000;
+            width: 250px;
+            height: 500px;
+            .transition(@transition-2);
+
+            .style-choose{
+                .bg(@color-trans-dark);
+                .box-shadow(@shadow-outer-gray);
+                padding: 15px;
+                width: 250px;
+                height: 100%;
+                border: 3px solid @w;
+                position: relative;
+
+                h3{
+                    .bg(@w);
+                    padding: 5px;
+                    margin-top: 10px;
+                }
+                ul{
+                    
+                    margin-top: 40px;
+
+                    li{
+                        padding: 5px;
+                        .bg(@w-dark);
+                        margin-bottom: 5px;
+                        a{
+                            h4{
+                                margin-bottom: 6px;
+                            }
+                            .color-box{
+                                display: block;
+                                margin-right: 10px !important;
+                                width: 35px !important;
+                                height: 35px !important;
+                            }
+                            .defaultblue{
+                                .bg(#38c8e0);
+                            }
+                            .aqua{
+                                .bg(#38c8e0);
+                            }
+                            .sunshine{
+                                .bg(#F39C12);
+                            }
+                            .darknight{
+                                .bg(#7F8C8D);
+                            }
+                            .lemondrop{
+                                .bg(#C3B42A);
+                            }
+                            .smoothgreen{
+                                .bg(#97BA0C);
+                            }
+                            .hotred{
+                                .bg(#A62152);
+                            }
+
+                            h4{
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            .style-show{
+                position: absolute;
+                left: -50px;
+                top: 17%;
+                width: 50px;
+                height: 50px;
+                text-align: center !important;
+                font-size: 24px !important;
+                color: #555;
+                margin-top: -25px;
+                border: 1px solid #ccc;
+                z-index: -1;
+                .bg(@w);
+                -webkit-border-radius: 4px 0 0 4px;
+
+                &:hover{
+                    color: #aaa;
+                }
+
+            }
+            .icon:before{
+                margin: 0 !important;
+                line-height: 51px !important;
+            }
+        }
+
+        .show-themes{
+            right: 0px !important;
+            display: block;
+        }        
+
+        .st-pusher{
+            background-image: url(@body-image);
+            background-attachment: fixed;
+            width: 100% !important;
+            height: 100% !important;
+            background-size: cover;
+
+            .st-content{
+                .st-content-inner{
+
+                    header{
+                        padding: 0px!important;
+
+                        .header-logo{
+                            padding: 20px !important;
+                            h1{
+                                color: @w !important;
+                                strong{
+                                    .bg(@color-trans-dark);
+                                }
+                                span{
+                                    font-family: 'Francois One', sans-serif;
+                                    color: @color !important;
+                                }
+                                small{
+                                    color: @w!important;
+                                }
+                            }                            
+                        }
+
+                        .header-right{
+                            .head-search-link{
+                                padding: 0px !important;
+
+                                .form-group{
+                                    position: relative;
+                                    padding: 0 !important;
+
+                                    input[type="text"]{
+                                        width: 100% !important;
+                                        padding: 5px 70px 5px 10px !important;
+                                        font-size: 1.2em!important;
+                                        color: @w !important;
+                                        border-left: 4px solid @gray-lighter;
+                                        border-top: none!important;
+                                        border-right: none!important;
+                                        border-bottom: none!important;
+                                        border-radius: 0px !important;
+                                        box-shadow: none!important;
+                                        .bg(@color-trans-light);                                    
+
+                                        &:focus{
+                                            border-color: @color;
+                                            box-shadow: inset 2px 2px 5px @gray;
+                                            .bg(@color-trans-light);
+                                        }
+                                    }
+
+                                    button{
+                                        position: absolute;
+                                        right: 0px;
+                                        top: 0px;
+                                        padding: 5px 20px !important; 
+                                        border: none !important;
+                                        box-shadow: none !important;
+                                        .bg(@t);
+                                        
+                                        &:hover{
+                                            .bg(@color-trans-light);
+                                        }
+
+                                        .fa.fa-search{
+                                            font-size: 1em !important;
+                                            color: @w !important;
+                                            padding: 0px 3px !important;
+                                            text-shadow: 1px 1px 1px @gray;
+                                        }
+                                    }                                    
+                                }
+                            }
+                            .head-social-link{
+                                padding: 20px 0 !important;
+                                ul {
+                                    li {
+                                        
+                                        display: inline-block!important;
+                                        a {
+
+                                            &:hover{
+                                                .bg(@t);
+                                            }
+                                            i {
+                                                height: 34px;
+                                                width: 34px;
+                                                .bg(@color-trans-dark);
+                                                color: @w;
+                                                margin: 5px;
+                                                border-radius: 50%;
+                                                padding: 9px;
+                                                font-size: 1em;
+                                                .transition(@transition-1);
+
+                                                &:hover{
+                                                    .bg(@color);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .header-nav{
+
+                            .navbar{
+                                .bg(@w-dark);
+                                border-color: @color-trans-dark!important;
+                                border-radius: 0px!important;
+                                .box-shadow(@shadow-outer-gray);
+
+                                .navbar-header{
+                                    .navbar-toggle{
+                                        margin: 0 !important;
+                                        .bg(@color);
+                                        border: none!important;
+                                        padding: 5px !important;
+                                        border-radius: 0px !important;
+                                        h3{
+                                            cursor: pointer;
+                                            color: @h3-1 !important;
+                                            padding: 8px !important;
+                                            margin: 0 !important;
+                                            text-shadow: 1px 1px 3px @gray-light;
+                                        }                                        
+                                    }
+                                    .open-sidebar{
+                                        .bg(@color);
+                                        border: none!important;
+                                        padding: 3px !important;
+                                        .fa{
+                                            color: @w;
+                                            line-height: 1.8em;
+                                            margin: auto 15px;
+                                            text-shadow: 1px 1px 3px @gray-light;
+                                        }
+
+                                        &:active{
+                                            border: none!important;
+                                        }
+                                    }
+                                    .navbar-brand{
+                                        padding: 0!important;
+                                        margin-left: 20px;
+                                        h2{
+                                            color: @h2-4 !important;
+                                            line-height: 1.7em !important;
+                                            font-size: 1.9em !important;
+                                        }
+                                    }
+                                }
+
+                                .collapse{
+
+                                    .nav{
+                                        .dropdown{
+                                            .bg(@color-trans-dark);
+                                            margin-left: 1px!important;
+                                            border-bottom: 1px dotted @w;
+                                            
+                                            a{
+                                                padding: 20px 15px!important;
+                                                color: @w!important;
+                                                .bg(@t);
+
+                                                &:hover{
+                                                    .bg(@color);
+                                                }
+                                            }
+
+                                            .dropdown-menu{
+                                                padding: 3px 0;
+                                                border-bottom: 3px solid @color;
+                                                border-top: 3px solid @color;
+                                                border-radius: 0 !important;
+
+                                                li{
+                                                    padding: 0 10px;
+                                                    .bg(@t);
+                                                    .transition(@transition-1);
+                                                    border-bottom: 1px solid @gray-lighter;
+
+                                                    a{
+                                                        font-size: 1em !important;
+                                                        padding: 8px 10px !important;
+                                                        color: @gray !important;
+
+                                                        &:hover{
+                                                            .bg(@t);
+                                                            color: @color !important;
+                                                        }
+                                                    }
+
+                                                    &:hover{
+                                                        .bg(@w-dark);
+                                                        padding-left: 5px !important;
+                                                    }
+
+                                                    &:hover> a{
+                                                        color: @color !important;
+                                                    }
+                                                }
+                                            }                                            
+
+                                            /*  HorizontalDropDownMenu Designs
+                                            ________________________________________*/
+
+                                            .cbp-hrmenu{
+                                                ul{
+                                                    li{
+                                                        border: none;
+
+                                                        &:hover{
+                                                            .bg(@color);
+                                                        }
+                                                        a{
+                                                            .bg(@t);
+                                                            line-height: 20px !important;                                                            
+                                                        }
+
+                                                        .cbp-hrsub{
+                                                            .box-shadow(@shadow-outer-gray);
+                                                            .bg(@t);
+
+                                                            .cbp-hrsub-inner{
+                                                                .bg(@w);
+                                                                border-bottom: 3px solid @color;
+                                                                border-top: 3px solid @color;
+
+                                                                .cbp-hrsub-inner-div{
+                                                                    
+                                                                    padding: 20px !important;
+
+
+                                                                    .header-logo{
+                                                                        padding: 20px 10px !important;
+                                                                        margin-bottom: 20px;
+                                                                        h1{
+                                                                            font-size: 30px !important;
+                                                                            color: @w !important;
+                                                                            strong{
+                                                                                .bg(@color-trans-dark);
+                                                                            }
+                                                                            span{
+                                                                                font-family: 'Francois One', sans-serif;
+                                                                                color: @color !important;
+                                                                            }
+                                                                            small{
+                                                                                color: @gray !important;
+                                                                            }
+                                                                        }                            
+                                                                    }
+
+                                                                    .dropdown-link{
+                                                                        padding: 7px 10px !important;
+                                                                        color: @gray !important;
+                                                                        margin-bottom: 20px;
+                                                                        margin-left: 20px !important;
+                                                                        .transition(@transition-2);
+
+                                                                        &:hover{
+                                                                            .bg(@color);
+                                                                            color: @w !important;
+                                                                        }
+                                                                    }
+
+                                                                    .dropdown-about{
+                                                                        padding-left: 10px !important;
+                                                                        font-size: 1em !important;
+                                                                    }
+
+                                                                    img{
+                                                                        padding: 20px !important;
+                                                                        width: 160px !important;
+                                                                        height: auto;
+                                                                    }
+                                                                    h4{
+                                                                        color: @color;
+                                                                        font-size: 1.1em !important;
+                                                                        margin: 0.5em !important;
+                                                                        padding-bottom: 5px;
+                                                                        font-family: @font-family-1 !important;
+                                                                        border-bottom: 1px solid @gray;
+                                                                    }
+                                                                    ul{
+
+                                                                        li{
+                                                                            padding-left: 10px;
+                                                                            height: 35px;
+                                                                            .bg(@t);
+                                                                            border-bottom: 1px solid @gray-lighter;
+                                                                            .transition(@transition-1);
+
+                                                                            a{
+                                                                                font-size: 0.83em !important;
+                                                                                line-height: 35px !important;
+                                                                                padding: 0 10px !important;
+                                                                                color: @gray !important;
+                                                                                
+                                                                                &:hover{
+                                                                                    .bg(@t);
+                                                                                    color: @color !important;
+                                                                                }
+                                                                            }
+
+                                                                            &:hover{
+                                                                                .bg(@w-dark);
+                                                                                padding-left: 5px !important;
+                                                                            }
+
+                                                                            &:hover> a{
+                                                                                color: @color !important;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .slider{
+                        overflow: hidden!important;
+                        margin-bottom: 12px !important;
+                        padding: 0 6px;
+
+                        .sequence{
+                            background: -webkit-radial-gradient(50% 55%, ellipse closest-corner, rgba(0, 0, 0, 0.37) 1%, rgba(0, 0, 0, 0.7) 100%);
+                            background: -moz-radial-gradient(50% 55%, ellipse closest-corner, rgba(0, 0, 0, 0.37) 1%, rgba(0, 0, 0, 0.7) 100%);
+                            background: -ms-radial-gradient(50% 55%, ellipse closest-corner, rgba(0, 0, 0, 0.37) 1%, rgba(0, 0, 0, 0.7) 100%);
+                            background: radial-gradient(50% 55%, ellipse closest-corner, rgba(0, 0, 0, 0.37) 1%, rgba(0, 0, 0, 0.7) 100%);
+                            .box-shadow(@shadow-outer-gray);
+
+                            ul{
+                                border-top: 1px solid @b;
+                                .box-shadow(@shadow-outer-gray);
+                                li{
+                                    h2{
+
+                                    }
+                                    h3{
+                                        font-size: 1.4em !important;
+                                    }
+                                }
+
+                                li{
+                                    .listtwo-2{
+                                        h2{
+                                            font-size: 24px !important;
+                                            line-height: 45px !important;
+                                            span{
+                                                color: @h2-4 !important;
+                                                font-size: 60px !important;
+                                                vertical-align: text-top;
+                                                margin-top: 20px !important;
+                                            }
+                                        }
+                                    }
+                                    .listtwo-3{
+                                        a{
+                                            padding:12px 35px;
+                                            .bg(@color-trans-dark);
+                                            color: @w !important;
+                                            font-size: 20px !important;
+                                            .transition(@transition-2);                                                    
+
+                                            &:hover{
+                                                .bg(@color);
+                                            }
+                                        }
+                                    }
+                                    .ipad2{
+                                        width: 40% !important;
+                                    }
+                                    .slide-h2{
+                                        color: #fff !important;
+                                        margin: 0 !important;
+                                    }
+                                    .slide-h3{
+                                        color: #fff !important;
+                                        line-height: 1.6 !important;
+                                    }
+                                    .listone-3{
+                                        a{
+                                            
+                                            padding:12px 35px;
+                                            .bg(@color-trans-dark);
+                                            color: @w !important;
+                                            font-size: 20px !important;
+                                            .transition(@transition-2);
+
+                                            &:hover{
+                                                .bg(@color);
+                                            }                                                        
+                                        }
+                                    }
+                                    .listtwo-4{
+                                        .slide-h2{
+                                            margin-bottom: 10px !important;
+                                            padding: 5px 20px;
+                                            .bg(@color-trans-dark);
+                                        }
+                                    }
+                                    .listtwo-5, .listtwo-6, .listtwo-7, .listtwo-8 {
+                                        h3{
+                                            color: @h3-1 !important;
+                                            float: left;
+                                            padding: 5px 20px !important;
+
+                                            i{
+                                                .bg(@color-trans-dark);
+                                                padding: 7px !important;
+                                                height: 30px !important;
+                                                width: 30px !important;
+                                                margin: 0px !important;
+                                            }
+                                        }
+                                    }
+                                    .slide-p, .slide-q, .slide-r {
+
+                                        h3{
+                                            margin: 0px;
+                                            .bg(@color-trans-dark);
+                                            font-weight: 800;                                                     
+                                            padding: 20px !important;                                                    
+                                            font-size: 30px !important;
+                                            text-shadow: 2px 1px 3px @gray;
+                                            color: @h3-1 !important;
+                                            .transition(@transition-1);
+                                        }
+                                    }                                   
+                                }
+                            }
+                        }
+                    }
+
+                    .page-logo{
+                        h2{
+                            font-family: 'Francois One', sans-serif !important;
+                            font-size: 3em !important;
+                            color: @h2-1 !important;
+                            text-shadow: 2px 2px 4px @gray;
+                            margin: 20px 0 40px!important;
+
+                            small{
+                                color: @h2-1 !important;
+                            }                        
+                        }
+                    }
+
+
+//                  Designing Main body page
+//______________________________________________________________
+
+                    .main-body {                    //  Design of home page1 and page2
+                        
+                        z-index: 0!important;
+                        .bg(@t);
+                            
+                            .home-intro{
+                                margin-bottom: 12px !important;
+                                .bg(@w-dark);
+                                .box-shadow(@shadow-outer-gray);
+
+                                .left{
+                                    padding-right: 25px !important;
+                                    h2{
+                                        font-family: 'Abel', sans-serif !important;
+                                        font-size: 66px !important;
+                                        line-height: 1.1em !important;
+                                    }
+                                }
+                                .right{
+                                    padding-left: 25px !important;                                    
+
+                                    h1{
+                                        font-family: 'Abel', sans-serif !important;
+                                        font-size: 50px !important;
+                                        border-bottom: 3px solid @color;
+                                        line-height: 60px !important;
+                                        margin-bottom: 50px !important;
+                                    }
+                                    p{
+                                        width: 80% !important;
+                                    }
+                                }
+                            }
+
+
+                            .home-image{
+                                .bg(@w-dark);
+                                h2{
+                                    color: @h2-4 !important;
+                                    margin-bottom: 40px !important;
+                                }
+
+                                h3{
+                                    color: @gray-light !important;
+                                    line-height: 1.6em !important;
+                                    margin-bottom: 30px;
+                                    font-size: 23px !important;
+                                }
+
+                                img{
+                                    width: 80%;
+                                    margin-left: 10%;
+                                    border-bottom: 1px solid @gray;
+                                }
+                            }
+
+                            .box {
+                                .bg(@color-trans-dark);
+                                padding: 20px !important;
+                                height: 100%;
+                                .box-shadow(@shadow-outer-gray);
+
+                                h2 {
+                                    z-index: 10!important;
+                                    color: #FFF;
+                                }
+
+                                p {
+                                    z-index: 10!important;
+                                    color: #FFF;
+                                }
+
+                                img {
+                                    z-index: 5!important;
+                                    height: 100%;
+                                    position: absolute;
+                                    top: 0px;
+                                }
+                            }
+
+                        .square-teampics{
+                            padding: 0 12px 0px 0!important;
+                            .box-teampics{
+                                .bg(@color-trans-dark);
+                                padding: 0px!important;
+                                .team-pic{
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                        }
+
+                        .square-text{
+                            padding: 0 12px 6px 6px !important;
+                            .box-text{
+                                .bg(@color-trans-dark);
+                                padding: 10px 5px;
+
+                                h2{
+                                    color: @h2-2 !important;
+                                }
+                            }
+                        }
+
+                        .square-about{
+                            padding-top: 0px!important;
+                            .box-about {
+                                .bg(@color-trans-dark);
+                                padding: 10px;
+
+                                img {
+                                    height: 99%;
+                                }
+                                h2 {
+                                    color: @h2-2 !important;
+                                }
+                                p{
+                                    width: 33% !important;
+                                }
+                            }
+                        }
+
+                        .square-gallary{
+                            .box-gallary {
+                                padding: 0!important;
+                                h2{
+                                    z-index: 10;
+                                    .bg(@color-trans-dark);
+                                    position: absolute;
+                                    margin: 10px !important; 
+                                    padding: 5px 15px !important;
+                                    top: 0;
+                                    left: 0px;
+                                }
+                            }
+                        }
+
+                        .square-type{
+                            padding-left: 0px!important;
+                            .box-type{
+                                .type-text{
+                                    color: @b !important;
+                                }
+
+                                .type-wrap{
+
+                                }                            
+                            }
+                        }
+
+                        .square-type2{
+                            padding-left: 0px!important;
+                            .box-type2 {
+                                
+                                h2{
+                                    color: @h2-2;
+
+                                    span{
+                                        color: @h2-1;
+                                    }
+                                }
+                            }
+                        }
+
+                        .square-news{
+                            padding: 6px 12px 0 0!important;
+                            .box-news {
+                                .bg(@color-trans-dark);
+
+                                img {
+                                    width: 140%;
+                                    padding: 0 !important;
+                                    height: auto !important;
+                                    position: absolute;
+                                    left: 0px;
+                                    top: 7px;
+                                    .bg(@t);
+                                    border:none !important;
+                                }
+                                h2{
+                                    color: #FFF;
+                                    position: absolute;
+                                    bottom: 10px;
+                                    right: 30px;
+                                }
+                            }
+                        }
+
+                        .square-testimonial{
+                            .box-testimonial {
+                                padding: 0px !important;
+                                overflow: hidden;
+                                p {
+                                    color: @p-2;
+                                }
+                                img{
+
+                                }
+
+                                .carousel {
+                                    padding-top: 0px;
+                                    .carousel-inner1{
+                                        padding: 0px!important;
+                                        .caro {
+                                            height: 100%;
+                                            .left{
+                                                padding: 0px!important;
+                                                position: relative;
+                                                img{
+                                                    width: 97%!important;
+                                                    height: auto;
+                                                    z-index: 10;
+                                                }
+                                            }
+
+                                            .right{
+                                                padding: 15px!important;
+                                                p{
+                                                    margin-top: 10px !important;
+                                                    line-height: 1.3em !important;
+                                                }
+                                            }
+                                        }                                    
+                                    }
+                                }
+                            }
+                        }
+
+                        .square-carosal{
+                            padding-left: 0px!important;
+                            .box-carosal{
+
+                                .carousel {
+                                    padding-top: 0px;
+                                    .carousel-inner{
+                                        padding: 0px!important;
+                                        .item {
+                                            section{
+                                                blockquote{
+                                                    .bg(@t);
+                                                    margin: 20px 0 !important;
+                                                    border-left-color: @w !important;
+
+                                                    p{
+                                                        color: @p-2 !important;
+                                                    }
+                                                    small{
+                                                        color: @w !important;
+                                                    }
+                                                }
+                                            }
+                                        }                                    
+                                    }
+                                }
+                            }
+                        }
+
+                        .square-blog-text{
+                            .box-blog-text{
+                                position: relative;
+                                padding: 0px !important;
+
+                                h2{
+                                    padding: 20px 0 0 20px !important;
+                                }
+                                p{
+                                    padding: 10px 20px !important;
+                                    color: @p-2 !important;
+                                }
+
+                                img{
+                                    width: 90% !important;
+                                    height: auto;
+                                    position: absolute;
+                                    right: 0;
+                                    top: 51%;
+                                }
+                            }
+                        }
+
+                        .square-class{
+                            padding-left: 0px!important;
+                            .box-class{
+                                padding: 0px !important;
+                                overflow: hidden;
+                                a{
+                                    figure{
+                                        margin: 0 !important;
+                                        .bg(@t);
+
+                                        img{
+                                            width: 105% !important;
+                                            height: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .square-social{
+                            padding: 6px 12px 0 0!important;
+                            .box-social{
+                                .bg(@color-trans-dark);
+                                padding: 0px!important;
+
+                                .square-icon{
+                                    padding-top: 15px !important;
+                                    opacity: 0;
+
+                                    i{
+                                        font-size: 25px;
+                                        color: @w;
+                                    }
+                                }
+                                .facebook{
+                                    .bg(#3b5998);         //
+                                    .fa-facebook{
+                                        color: @w;
+                                    }
+                                }
+                                .twitter{
+                                    .bg(#55acee);         //                           
+                                    .fa-twitter{
+                                        color: @w;
+                                    }
+                                }
+                                .linkedin{
+                                    .bg(#0976b4);         //                          
+                                    .fa-linkedin{
+                                        color: @w;
+                                    }
+                                }
+                                .google{
+                                    .bg(#dd4b39);         //                     
+                                    .fa-google{
+                                        color: @w;
+                                    }
+                                }
+                                .youtube{
+                                    .bg(#e52d27);         //                           
+                                    .fa-youtube{
+                                        color: @w;
+                                    }
+                                }
+                                .dropbox{
+                                    .bg(#3d9ae8);         //                        
+                                    .fa-dropbox{
+                                        color: @w;
+                                    }
+                                }
+                                .skype{
+                                    .bg(#00aff0);         //                          
+                                    .fa-skype{
+                                        color: @w;
+                                    }
+                                }
+                                .pinterest{
+                                    .bg(#C92228);         //                        
+                                    .fa-github{
+                                        color: @w;
+                                    }
+                                }
+                                .digg{
+                                    .bg(#000000);         //                       
+                                    .fa-digg{
+                                        color: @w;
+                                    }
+                                }
+                                .instagram{
+                                    .bg(#3f729b);         //                         
+                                    .fa-instagram{
+                                        color: @w;
+                                    }
+                                }                                                                               
+                                    
+                                .social-plus{
+                                    padding: 0px!important;
+                                    border: none!important;
+                                    opacity: 1;
+                                    h2{
+                                        padding-right: 20px !important;
+                                        padding-top: 15px !important;
+                                    }
+                                }
+                            }
+                        }
+
+                        .square-contact{
+                            padding: 6px 12px 6px 0!important;
+                            .box-contact{
+                                .bg(@color-trans-dark);
+                                
+                                img{
+                                    position: absolute;
+                                    right: 10px;
+                                    bottom: 10px;
+                                    width: 70%;
+                                    z-index: 0!important;
+                                    .transition(@transition-2);
+                                }
+                                h2{
+
+                                }
+                                p{
+                                    padding: 0px;
+                                }
+                            }
+                        }
+
+                        .square-mail{
+                            .box-mail{
+                                .bg(@color-trans-dark);
+                                padding: 50px 20px !important;
+                                i{
+                                    font-size: 50px!important;
+                                    color: @w;
+                                }
+                                h2{
+                                    color: @h2-2 !important;
+
+                                    small{
+                                        color: @h2-1;
+                                    }                      
+                                }
+                            }
+                        }
+                    }
+          
+
+//                  Designing About Us page
+//______________________________________________________________
+
+                    .main-body-about{
+
+                        .about-section1{
+                            .bg(@w-dark);
+
+                            .about-sec1-left{
+                                p{
+                                    color: @p-2 !important;
+                                }
+                                h2{
+                                    padding-right: 0 !important;
+                                }
+                            }
+
+                            .about-sec1-right{
+                                padding: 0 40px;
+
+                                .progress{
+                                    height: 7px;
+                                    margin-bottom: 30px;
+
+                                    .progress-bar{
+                                        .bg(@color);
+                                    }
+                                }
+                            }
+                        }
+
+                        .about-section2{
+
+                            .bg(@w-dark);
+
+                            .about-sec2-left{
+                                p{
+                                    color: @p-2 !important;
+                                    margin-right: 20px;
+                                }
+                                img{
+                                    padding: 20px;
+                                }
+                                ul{
+                                    margin-right: 20px;
+                                    li{
+                                        height: 30px;
+                                        width: 30px;
+                                        padding-top: 5px;
+                                        display: inline-block;
+                                        margin: 4px;
+                                        .bg(@color);
+                                        i{
+                                            color: @w;
+                                        }                                        
+                                    }
+                                }
+                            }
+
+                            .about-sec2-right{
+                                p{
+                                    color: @p-2 !important;
+                                }
+                                ul{
+                                    li{
+                                        line-height: 25px!important;
+                                        i{
+                                            color: @color;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .about-section3{
+                            .bg(@t);
+
+                            h2{
+                                color: @h2-1 !important;
+                                .size(80%; auto);
+                                .center();
+                                font-size: 3em !important;
+                                text-shadow: 0px 1px 1px @b;
+                            }
+                        }
+
+                        .about-section4{
+                            .bg(@w-dark);
+                            padding: auto 20px!important;
+                            
+                            h2{
+                                padding-left: 20px;
+                            }
+
+                            .team-box{
+                                padding: 20px;
+                                .center();
+
+                                img{
+                                    width: 90%;
+                                }
+                                p{
+                                    width: 90%;
+                                    color: @p-2 !important;
+                                }
+                                ul{
+                                    padding-right: 10%;
+                                    li{
+                                        display: inline-block;
+                                        height: 30px;
+                                        width: 30px;
+                                        padding-top: 5px;
+                                        display: inline-block;
+                                        margin: 4px;
+                                        .bg(@color);
+                                        i{
+                                            color: @w;
+                                        }                                        
+                                    }
+                                }
+                            }        
+                        }
+
+                        .about-section5{
+                            h3{
+                                color: @h3-1 !important;
+                            }
+                            .owl-carousel{
+                                .item{
+                                    padding: 5px!important;
+                                    a{
+
+                                        img{
+                                            .bg(@t);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+//                  Designing Gallary page
+//______________________________________________________________
+
+                    .main-body-gallary{
+                        .bg(@w-dark);
+
+                        .gallary-image{
+                            .callbacks_container{
+                                height: 100%!important;
+                                ul{
+                                    li{
+                                        img{
+                                            .bg(@w-dark);
+                                        }
+                                        p{
+                                            padding: 15px 10px;
+                                            margin-bottom: 0px!important;
+                                            width: 100%;
+                                            .bg(@p-4);
+                                            font-size: 20px!important;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .gallary-text {
+                                h2{
+                                    margin: 40px 10px!important;
+                                }
+                                p{
+                                    width: 80%;
+                                    margin: 10px;
+                                    color: @p-2 !important;
+                                }
+                            }
+                            a{
+                                .img-1 {
+                                    .bg(@w-dark);
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            .box-mail{
+                                .bg(@color-trans-dark);
+                                padding: 40px 20px;
+                                height: 100%;
+                                i{
+                                    font-size: 50px!important;
+
+                                }
+                                h2{
+                                    font: 200 25px/1 @font-family-1;
+                                    color: #333; 
+
+                                    small{
+                                        color: @h3-1;
+                                    }                      
+                                }
+
+                                &:hover{
+
+                                }
+                            }        
+                        }
+                    }
+
+
+//                  Designing Blog page
+//______________________________________________________________
+
+                    .main-body-blog{
+
+                        .blog-row{
+                            padding: 15px 5px;
+
+                            .box-blog{
+                                .bg(@color-trans-dark);
+                                padding: 15px 10px;
+                                .box-shadow(@shadow-outer-gray);
+
+                                .blog-title{
+                                    h3{
+                                        color: @h3-2 !important;
+                                    }
+                                    p{
+                                        color: @p-1 !important;
+                                    }
+                                }
+                                .blog-img{
+                                    img{
+                                        width: 100%;
+                                        border: none;
+                                        border-radius: 0px;
+                                    }
+                                }
+                                .blog-para{
+                                    p{
+                                        color: @gray-dark !important;
+                                    }
+                                    padding: 25px;
+                                }
+                            }
+
+                            .carousel{
+                                .box-shadow(@shadow-outer-gray);
+                                .bg(@w-dark);
+                                .carousel-inner{
+                                    .blog2-right1{
+                                        img{
+                                            height: 120px;
+                                            width: 120px;
+                                            .center();
+                                        }
+                                        h3{
+                                        }
+                                        p{
+                                            width: 80%;
+                                            .center();
+                                        }
+                                        ul{
+                                            width: 100%;
+                                            li{
+                                                display: inline-block!important;
+                                                .center();
+                                                .bg(@color);
+                                                padding: 6px;
+                                                height: 30px;
+                                                width: 30px;
+
+                                                i{
+                                                    color: @w;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .blog2-right2{
+                                .bg(@w-dark);
+                                .box-shadow(@shadow-outer-gray);
+                                padding: 10%;
+                                h3{
+                                    margin: 20px 0;
+                                    padding: 13px 0px;
+                                    border-bottom: 1px dotted #ccc;
+                                }
+                                ul{
+
+                                    li{
+                                        padding: 7px 0;
+                                        margin-bottom: 7px;
+
+                                        border-bottom: 1px dotted #ccc;
+                                        span{
+
+                                        }
+                                    }
+                                }
+                            }                            
+
+                            .blog2-right3{
+                                .bg(@w-dark);
+                                .box-shadow(@shadow-outer-gray);
+                                padding: 10%;
+                                h3{
+                                    margin: 20px 0;
+                                    padding: 13px 0px;
+                                    border-bottom: 1px dotted #ccc;                    
+                                }
+                                .tag-list{
+                                    a{
+                                        padding: 7px 12px;
+                                        .bg(@gray-lighter);
+                                        display: inline-block;
+                                        margin-right: 2px;
+                                        margin-bottom: 5px;                        
+                                    }
+                                }
+                            }                            
+                        }
+                    }
+
+
+//                  Designing Blog 2 and single blog page
+//______________________________________________________________
+
+                    .main-body-blog2{
+                        .bg(@w-dark);
+                        .blog2-section1, .singleblog-section1{
+
+                            .blog2-left, .singleblog-left{
+                                .blog2-box, .singleblog-box{
+                                    border: 1px solid @gray-lighter;
+                                    img{
+                                        width: 100%;
+                                        height: auto;
+                                        padding: 40px 20px;
+                                    }
+
+                                    .blog2-text{
+                                        padding: 0px 20px 20px 60px;
+
+                                        h2{
+                                            margin: 10px 0 !important;
+                                            color: @h2-4 !important;
+                                        }
+                                        ul{
+                                            margin: 0 !important;
+                                            li{
+                                                display: inline-block;
+                                                margin-right: 1.5em;
+                                                span{
+                                                    &:before{
+                                                        vertical-align: text-bottom !important;
+                                                        margin-top: 10px !important;
+                                                    }
+                                                }
+                                                p{
+                                                    display: inline-block;
+                                                    vertical-align: super !important;
+                                                    margin: 0 !important;
+                                                    
+                                                }
+                                            }
+                                        }
+                                        p{
+
+                                        }
+                                    }
+
+                                    .comments{
+                                        padding: 0px 20px 20px 60px;
+
+                                        h3{
+                                            margin-bottom: 40px;
+                                        }
+                                        .comment-box{
+                                            img{
+                                                height: 80px;
+                                                width: 80px;
+                                                padding: 0px;
+                                            }
+
+                                            .comment-text{
+                                                padding-left: 22%;
+                                            }
+                                        }
+
+                                        .comment-form{
+                                            .form-group{
+                                                .input-col{
+                                                    padding-left: 0px!important;
+
+                                                    .form-control{
+                                                        border: 1px solid @gray;
+                                                        box-shadow: none;
+                                                        .bg(@gray-lightmost);
+
+                                                        &:focus{
+                                                            .bg(@gray-lighter);
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            input[type=button]{
+                                                margin-right: 3%;
+                                                padding: 8px 30px;
+                                                border: 1px solid @gray;;
+                                                
+                                                .bg(@gray-lightmost);
+
+                                                &:hover{
+                                                    .bg(@gray-lighter);
+                                                }
+                                                &:active{
+                                                    border: 1px dotted @gray-light;
+                                                }                             
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .blog2-right{
+                                .blog2-right1{
+                                    
+                                    img{
+                                        height: 120px;
+                                        width: 120px;
+                                        .center();
+                                    }
+                                    h3{
+
+                                    }
+                                    p{
+                                        width: 80%;
+                                        .center();
+                                    }
+                                    ul{
+                                        width: 100%;
+                                        li{
+                                            display: inline-block!important;
+                                            .center();
+                                            .bg(@color);
+                                            padding: 6px;
+                                            height: 30px;
+                                            width: 30px;
+
+                                            i{
+                                                color: @w;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .blog2-right2{
+                                    padding: 10%;
+                                    h3{
+                                        margin: 20px 0;
+                                        padding: 13px 0px;
+                                        border-bottom: 1px dotted #ccc;
+                                    }
+                                    ul{
+
+                                        li{
+                                            padding: 7px 0;
+                                            margin-bottom: 7px;
+
+                                            border-bottom: 1px dotted #ccc;
+                                            span{
+
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .blog2-right3{
+                                    padding: 10%;
+                                    h3{
+                                        margin: 20px 0;
+                                        padding: 13px 0px;
+                                        border-bottom: 1px dotted #ccc;                    
+                                    }
+                                    .tag-list{
+                                        a{
+                                            padding: 6px 10px;
+                                            .bg(@gray-lighter);
+                                            display: inline-block;
+                                            margin-right: 2px;
+                                            margin-bottom: 5px;                        
+                                        }
+                                    }
+                                }
+                                .blog2-right4{
+                                    padding: 10%;
+                                    h3{
+                                        margin: 20px 0;
+                                        padding: 13px 0px;
+                                        border-bottom: 1px dotted #ccc; 
+                                    }
+                                    .blog2-right4-box{
+                                        img{
+                                            width: 80px;
+                                            height: 80px;
+                                        }
+                                        .blog-heading {
+                                            
+                                            margin: 0 0 0 40%;
+                                            border: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+//                  Designing portfolio page
+//______________________________________________________________
+
+                    .main-body-portfolio{
+                        .bg(@w-dark);
+
+                        h3{
+                            padding: 30px;
+                            font-size: 30px !important;
+                        }
+                        p{
+                            padding: 10px 30px;
+                            width: 80%;
+                        }
+                        .portfolio-nav{
+                            ul{
+                                padding: 30px;
+                                li{
+                                    color: @w;
+                                    cursor: pointer;
+
+                                    button{
+                                        border-radius: 0px !important;
+                                        width: 100px;
+                                        .bg(@color-trans-dark);
+                                        border-color: @color !important;
+                                    }
+                                }
+                                .active{
+                                    .bg(@color);
+                                }
+                            }
+                        }
+                        .portfolio-items{
+                            .Grid{
+                                .mix{
+                                    display: none;
+                                    opacity: 0;
+                                    vertical-align: top;
+                                    margin-bottom: 20px;
+                                    background: @t !important;
+                                    color: #fff;
+                                    font-size: 30px;
+                                    text-align: center;
+                                    line-height: 200px;
+
+                                    a{
+                                        div{
+                                            background: @color-trans-dark !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+//                  Designing portfolio-2 page
+//______________________________________________________________
+
+
+                    .main-body-porfolio2 {
+                        .bg(@w-dark);
+
+                        h3{
+                            padding: 30px;
+                            font-size: 30px !important;
+                        }
+                        p{
+                            padding: 10px 30px;
+                            width: 80%;
+                        }
+                        .portfolio-nav{
+                            margin: 60px !important;
+
+                            ul{
+                                margin-left: 10% !important;
+
+                                li{
+                                    cursor: pointer;
+                                    padding: 10px !important;
+
+                                    a{
+                                        font-size: 1.3em !important;
+                                        padding: 10px 30px !important;
+                                        border: 1px solid @w;
+                                        .transition(@transition-2);
+
+                                        .active{
+                                            color: @color;
+                                        }
+
+                                        &:hover{
+                                            border: 1px solid @color;
+                                        }
+                                    }
+                                }
+                                .icon:before{
+                                    margin: 1.5em !important;
+                                    font-size: 0.9em;
+                                }
+                            }
+                        }
+
+                        .portfolio2-items{
+                            .Grid{
+                                .mix{
+                                    margin-bottom: 20px !important;
+                                    padding-left: 0px !important;
+                                    display: none;
+
+                                    figure{
+                                        position: relative;
+
+                                        a{
+                                            position: absolute;
+                                            left: 0;
+                                            right: 0;
+                                            top: 0;
+                                            bottom: 0;
+
+                                            span.roll{
+                                                position: absolute;
+                                                left: 0;
+                                                right: 0;
+                                                top: 0;
+                                                bottom: 0;
+                                                background: url(../../images/mag.png) center 60% no-repeat @w;
+                                                background-size: 30% !important;
+                                                z-index: 10;    
+                                                -webkit-box-shadow: 0px 0px 2px #000;
+                                                -moz-box-shadow: 0px 0px 2px  #000;
+                                                box-shadow: 0px 0px 2px  #000;
+
+                                                .hover-text{
+                                                    font-size: 30px !important;
+                                                    padding: 20px !important;
+                                                    color: @b !important;
+                                                    position: absolute;
+                                                    top: 100px;
+                                                }
+                                                .icon{
+                                                    font-size: 30px !important;
+                                                    padding: 20px !important;
+                                                    color: @b !important;
+                                                    position: absolute;
+                                                    top: 80px;                                                    
+                                                }
+
+                                                h5, span{
+                                                    width: 80%;
+                                                    margin: 30% 0 0 10%;
+                                                    text-align: center;
+                                                }
+                                            }
+                                        }
+
+                                        img{
+                                            width: 100%;
+                                        }
+                                    }
+
+
+                                    .list-tag{
+                                        .bg(@w);
+                                        padding: 20px;
+                                        margin: 0px !important;
+                                        width: 100% !important;
+                                        .box-shadow(@shadow-outer-gray);
+
+                                        h4{
+                                            margin: 0px !important;
+                                            text-shadow: 1px 1px 1px @w;
+                                        }
+                                        p{
+                                            
+                                            width: 100% !important;
+                                            margin: 0px !important;
+                                            padding: 10px 10px 0 0!important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+//                  Designing portfolio-3 page
+//______________________________________________________________
+
+
+                    .main-body-porfolio3 {
+                        .bg(@w-dark);
+
+                        h3{
+                            padding: 30px;
+                            font-size: 30px !important;
+                        }
+                        p{
+                            padding: 10px 30px;
+                            width: 80%;
+                        }
+                        .portfolio-nav{
+                            margin-bottom: 30px !important;
+                            ul{
+                                padding: 30px;
+                                li{
+                                    color: @w;
+                                    cursor: pointer;
+
+                                    button{
+                                        border-radius: 0px !important;
+                                        width: 100px;
+                                        .bg(@color-trans-dark);
+                                    }
+                                }
+                                .active{
+                                    .bg(@color);
+                                }
+                            }
+                        }
+
+                        .portfolio3-items{
+                            .Grid{
+                                .mix{
+
+                                    a{
+                                        overflow: hidden;
+                                        img{
+                                            width: 100%;
+                                            .transition(@transition-4);
+
+                                            &:hover{
+                                                -webkit-transform: scale(1.2);
+                                                -moz-transform: scale(1.2);
+                                                -ms-transform: scale(1.2);
+                                                -o-transform: scale(1.2);
+                                                transform: scale(1.2);
+                                                -webkit-transition-duration: 2s;
+                                                -moz-transition-duration: 2s;
+                                                -ms-transition-duration: 2s;
+                                                -o-transition-duration: 2s;
+                                                transition-duration: 2s;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }                    
+
+
+//                  Designing portfolio-single page
+//______________________________________________________________
+
+    
+                    .main-body-portfolio-single{
+                        .bg(@w-dark);
+
+                        .portfolio-single-section1{
+                            .profolio-head{
+                                img{
+                                    padding: 40px !important;
+                                }
+                                p{
+                                    width: 80%;
+                                }
+                                a{
+                                    font-size: 1.2em !important;
+                                    padding: 10px 40px;
+                                    border: 1px solid @b;
+                                }
+                            }
+                            .profolio-detail{
+                                p{
+                                    width: 80%;
+                                    padding: 10px 40px;
+                                }
+                                h3{
+                                    padding: 10px 40px;
+                                }
+                                ul{
+                                    li{
+                                        padding: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+//                  Designing Team page
+//______________________________________________________________
+
+                    .main-body-team{
+
+                        .team-section1{
+                            .bg(@w-dark);
+
+                            .about-sec2-left{
+                                p{
+                                    color: @p-2 !important;
+                                    margin-right: 20px;
+                                }
+                                img{
+                                    padding: 20px;
+                                }
+                                ul{
+                                    margin-right: 20px;
+                                    li{
+                                        height: 30px;
+                                        width: 30px;
+                                        padding-top: 5px;
+                                        display: inline-block;
+                                        margin: 4px;
+                                        .bg(@color);
+
+                                        i{
+                                            color: @w;
+                                        }                                        
+                                    }
+                                }
+                            }
+
+                            .about-sec2-right{
+                                padding-top: 40px;
+                                p{
+                                    color: @p-2 !important;
+                                }
+                                ul{
+                                    li{
+                                        line-height: 25px!important;
+                                        i{
+                                            color: @color;
+                                        }
+                                    }
+                                }
+                            }                            
+
+                        }
+
+                        .team-section2{
+                            background-image: url('../../images/some1.jpg');
+                            background-attachment: fixed;
+                            width: 100%;
+                            height: 100%;
+                            background-size: cover;                            
+                            .center();
+
+                            h2{
+                                font : 700 50px/60px  'Josefin Sans', sans-serif !important;
+                                color: @h2-2 !important;
+                                width: 80% !important;
+                                margin-left: 10% !important;
+                            }                            
+                        }
+
+                        .team-section3{
+                            .bg(@w-dark);                            
+                            padding: auto 20px!important;
+                            
+                            h2{
+                                padding-left: 20px;
+                            }
+
+                            .team-box{
+                                
+                                padding: 30px;
+                                .center();
+
+                                img{
+                                    width: 90%;
+                                }
+                                p{
+                                    width: 90%;
+                                    color: @p-2 !important;
+                                }
+                                ul{
+                                    padding-right: 10%;
+                                    li{
+                                        display: inline-block;
+                                        height: 30px;
+                                        width: 30px;
+                                        padding-top: 5px;
+                                        display: inline-block;
+                                        margin: 4px;
+                                        .bg(@color);
+
+                                        i{
+                                            color: @w !important;
+                                        }
+                                    }
+                                }
+                            }                              
+                        }
+                    }
+
+
+//                  Designing Pricing and FAQ page
+//______________________________________________________________
+
+                    .main-body-pricing{
+                        
+                        .pricing-section-1{
+                            padding: 40px;
+
+                            .pricetag{
+                                .box-shadow(@shadow-outer-gray);
+                                border-radius: 0px;
+                                margin-bottom: 50px;
+                                .bg(@w-dark);
+                                border: 1px solid @w;
+                                padding: 20px;
+
+                                .price-head{
+                                    h2{
+                                        font-size: 35px !important;
+                                        h4{
+
+                                        }
+                                    }
+                                }
+                                .price-body{
+                                    padding: 20px !important;
+                                    border-radius: 5px !important;
+                                    border: 1px solid @gray;
+                                    .bg(@gray-lighter);
+                                    margin-bottom: 10px !important;
+
+                                    h2{
+                                        margin-top: 10px !important;
+                                        font-size: 45px !important;
+                                        line-height: 40px !important;
+                                        vertical-align: text-top !important;
+                                        color: @h2-4 !important;                                            
+                                        sup{
+                                            color: @gray;
+                                            font-size: 50% !important;
+                                        }
+                                    }
+                                    small{
+                                        display: block;
+                                        height: auto;
+                                    }
+                                    a{
+                                        margin-top: 10px !important;                                            
+
+                                        &:hover> i{
+                                            color: @w !important;
+                                        }
+                                    }
+                                }
+                                ul{
+                                    padding-top: 10px !important;
+                                    li{
+                                        width: 100% !important;
+                                        padding: 10px !important;
+                                        border-bottom: 1px solid #F1F1F1 !important;                                            
+                                        i{
+                                            color: @gray !important;
+                                        }
+
+                                        &:hover{
+                                            .bg(@gray-lightmost);
+                                        }
+                                    }
+                                }
+                            }
+
+                            .pricetag-pro{
+                                z-index: 10;
+                                -moz-transform: scaleY(1.1);
+                                -webkit-transform: scaleY(1.1);
+                                transform: scaleY(1.1);
+                                .bg(@color-trans-dark);
+
+                                h2{
+                                    color: @h2-1 !important;
+
+                                    .price-body{
+                                        color: @gray !important;
+                                        .bg(@w);
+
+                                        h2{
+                                            color: @h2-4 !important;
+                                        }
+                                        small{
+                                            color: @h2-4 !important;
+                                        }
+                                    }
+                                }
+                                ul{
+                                    li{
+                                        color: @w !important;
+                                        &:hover{
+                                            .bg(@w);
+                                            color: @color !important;                                            
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .pricing-section-2{
+                            .bg(@w-dark);
+                            .box-shadow(@shadow-outer-gray);
+
+                            padding: 20px !important;
+                            .pricetag-table{
+                                .table{
+                                    thead{
+                                        .bg(@gray-lighter);
+                                        border-bottom: 10px solid @w;
+                                        th{
+                                            text-align: center !important;
+                                            h2{
+                                                color: @h2-4 !important;
+                                                font-size: 35px !important;
+                                            }
+                                        }
+                                    }
+                                    tbody{
+                                        tr{
+                                            text-align: center !important;
+                                            td{
+                                                i.fa-check{
+                                                    color: green !important;
+                                                }
+                                                i.fa-times{
+                                                    color: red !important;
+                                                }                                                
+                                                a{
+                                                    margin-top: 10px !important;
+                                                }
+                                            }
+                                            .head{
+                                                .bg(@gray-lighter);
+                                            }
+                                        }
+                                        .table-first-row{
+                                            
+                                            padding-bottom: 20px !important;
+                                            text-align: center !important;
+                                            td{
+                                                padding: 20px !important;
+                                                i{
+                                                    color: @color !important;
+                                                }
+                                                h2{
+                                                    font-size: 35px !important;
+                                                }
+                                                a{
+                                                    &:hover> i{
+                                                        color: @w !important;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .faq-section{
+
+                            .panel-group{
+                                .panel{
+                                    margin-top: 0px !important;
+                                    border-radius: 0 !important;
+                                    .bg(@t);
+
+                                    .panel-heading{
+                                        padding: 15px !important;
+                                        .panel-title{
+                                            a{
+                                                color: @color !important;
+                                                font-size: 1.4em !important;
+                                            }
+                                        }
+                                    }
+                                    .panel-collapse{
+                                        .panel-body{
+                                            .bg(@w-dark);
+                                            padding: 20px 40px;
+
+                                            p{
+                                                width: 90% !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+//                  Designing Testimonials page
+//______________________________________________________________
+
+                    .main-body-testimonial {
+                        .testimonials-section-1{
+                            .bg(@w-dark);
+                            h3{
+                                padding: 30px;
+                                font-size: 30px !important;
+                            }
+                            p{
+                                padding: 10px 30px;
+                                width: 80%;
+                            }                            
+
+                            .message {
+                                .bg(@t);
+                                border: none!important;
+                                padding: 4% 8% !important;
+                                border-radius: 0px;
+                                margin-right: 0px !important;
+                                margin-left: 0px !important;                        
+                                                      
+                                .message_img{
+                                    
+                                    img {
+                                        width: 100%;
+                                        height: auto;
+                                        margin-bottom: 8%;
+                                    }
+                                    span {
+                                        color: @b !important;
+                                    }
+                                }
+                                .message_body{
+                                    p {
+                                        color: #000;
+                                        font-size: 18px !important;
+                                    }
+                                    span {
+                                        color: @p-4;
+                                        padding: 0 30px;
+                                    }                                    
+                                }
+                            }                        
+                        }
+
+                        .testimonials-section-2{
+                            .bg(@color-trans-dark);
+
+                            .carousel{
+                                .carousel-inner{
+                                    .item{
+                                        section{
+                                            h3{
+                                               width: 80% !important;
+                                               margin-left: 10%;
+                                               padding-bottom: 30px;
+                                               
+                                               i{
+                                                    vertical-align: baseline;
+                                                    color: @w !important;
+                                               }
+                                            }
+                                            p{
+                                                margin-right: 10%;
+                                                color: @p-1 !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .testimonials-section-3{
+                            .bg(@t);
+
+                            h3{
+                                color: @h3-1 !important;
+                            }
+                            .owl-carousel{
+                                .item{
+                                    padding: 5px!important;
+                                    a{
+
+                                        img{
+                                            .bg(@t);
+                                        }
+                                    }
+                                }
+                            }                            
+                        }                        
+                    }
+
+
+//                  Designing Testimonia 2 page
+//______________________________________________________________
+
+                    .main-body-testimonial2{
+
+                        .testimonial-section-1{
+                            .bg(@w-dark);
+                            p{
+                                padding: 10px 30px;
+                                width: 80%;                                
+                            }
+                            
+                            ul{
+                                padding: 10px 50px !important;
+                                li{
+                                    a{
+                                        font: 100 1.4em/3em @font-family-p !important;
+                                        padding-left: 30px;
+                                        span{
+
+                                        }
+                                        &:before{
+                                            margin-bottom: 25px !important;
+                                            margin-right: 20px !important;
+                                            color: @b !important;
+                                        }
+
+                                        &:hover, &:visited{
+                                            color: @color !important;
+                                        }
+                                        &:active{
+                                            color: @w !important;
+                                        }                                        
+                                    }
+
+                                    .message {
+                                        .bg(@gray-lighter);
+                                        border: none!important;
+                                        padding: 5% !important;
+                                        border-radius: 0px;
+                                        margin-right: 0px !important;
+                                        margin-left: 0px !important;                        
+                                                              
+                                        .message_img{
+                                            margin-right: 5%;
+                                            img {
+                                                width: 100%;
+                                                height: auto;
+                                                margin-bottom: 10px;
+                                            }
+                                            span {
+                                                color: @b;
+                                            }
+                                        }
+                                        .message_body{
+                                            p{
+                                                color: #000;
+                                                font-size: 18px !important;
+                                                width: 100% !important;
+                                            }
+                                            span {
+                                                color: @p-4;
+                                            }                                            
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .testimonials-section-2{
+                            .bg(@color-trans-dark);
+
+                            .carousel{
+                                .carousel-inner{
+                                    .item{
+                                        section{
+                                            h3{
+                                               width: 80% !important;
+                                               margin-left: 10%;
+                                               padding-bottom: 30px;
+                                               
+                                               i{
+                                                    vertical-align: baseline;
+                                                    color: @w !important;
+                                               }
+                                            }
+                                            p{
+                                                margin-right: 10%;
+                                                color: @p-1 !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .testimonials-section-3{
+                            .bg(@t);
+
+                            h3{
+                                color: @h3-1 !important;
+                            }
+                            .owl-carousel{
+                                .item{
+                                    padding: 5px!important;
+                                    a{
+
+                                        img{
+                                            .bg(@t);
+                                        }
+                                    }
+                                }
+                            }                            
+                        }                           
+                    }
+
+
+//                  Designing product page
+//______________________________________________________________
+
+                    .main-body-product{
+
+                        .product-link{
+                            padding: 10px 30px;
+                            border: 1px solid @gray;
+                        }
+                        .product-section1{
+                            .bg(@w-dark);
+                            .left{
+                                margin: 40px 0px !important;
+                                padding-left: 60px;
+                                h2{
+                                    padding-bottom: 40px;
+                                }
+                                p{
+                                    padding-bottom: 30px;
+                                }
+                            }
+                            .right{
+                                margin: 40px 0px !important;
+                                border-bottom: 1px solid @gray-light;
+                                img{
+                                    width: 80%;
+                                    margin-left: 10%;
+                                }
+                            }
+                        }
+
+                        .product-section2{
+                            border-bottom: 1px solid @gray;
+                            .bg(@w-dark);
+                            .left{
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                            .right{
+                                margin: 40px 0px !important;
+                                padding-left: 60px;
+                                h2{
+                                    padding-bottom: 40px;
+                                }
+                                p{
+                                    padding-bottom: 30px;
+                                }
+                            }
+                        }
+
+                        .product-section3{
+                            .bg(@color-trans-dark);
+                            h2{
+                                color: @w !important;
+                            }
+                            img{
+                                width: 80%;
+                                margin-left: 10%;
+                                border-bottom: 1px solid @gray; 
+                            }
+                        }
+
+                        .product-section4{
+                            .bg(@w-dark);
+                            .left{
+                                img{
+                                    width: 100%;
+                                }                                
+                            }
+                            .right{
+                                padding: 10px 50px;
+                                margin: 40px 0px !important;
+                                h2{
+                                    padding-bottom: 40px;
+                                }                                
+                                p{
+                                    padding-bottom: 30px;
+                                }                                
+                            }
+                        }
+                    }
+
+
+//                  Designing service page
+//______________________________________________________________
+
+
+                    .main-body-service{
+
+                        .service-section1{
+                            .box-shadow(@shadow-outer-gray);
+                            .bg(@w-dark);
+                            .left{
+                                p{
+                                    color: @p-2 !important;
+                                }
+                                h3{
+                                    margin-bottom: 30px;
+                                }
+                            }
+
+                            .right{
+                                padding: 40px;
+                                p{
+                                    color: @p-2 !important;
+                                    margin-right: 20px;
+                                }
+                                img{
+                                    padding: 2px;
+                                    margin-bottom: 10px;
+                                }
+                                ul{
+                                    margin-right: 20px;
+                                    li{
+                                        height: 30px;
+                                        width: 30px;
+                                        padding-top: 5px;
+                                        display: inline-block;
+                                        margin: 4px;
+                                        .bg(@color);
+
+                                        i{
+                                            color: @w !important;
+                                        }                                        
+                                    }
+                                }
+                            }
+                        }
+
+                        .service-section2{
+
+                            h3{
+                                color: @h3-1 !important;
+                            }
+                            .two-box {
+                                margin-top: 7%;
+
+                                .hi-icon-effect-3 {
+                                    .box-cover{
+                                        padding-right: 0px !important;
+
+                                        .box {
+
+                                            .bg(@w-dark);
+                                            border-radius: 5px; 
+                                            padding: 20px 0 !important;
+                                            margin: 4% 0 0 0 !important;
+                                            .box-shadow(@shadow-outer-gray);
+
+                                            .hi-icon {
+                                                box-shadow: 0 0 0 4px @color;
+
+                                                &:after {
+                                                    .bg(@color);
+                                                }
+
+                                                &:hover {
+                                                    color: @color !important;
+                                                }
+                                            }
+                                            h3 {
+                                                margin-top: 0px;
+                                                padding-left: 10px;
+                                                color: @gray !important;
+                                            }
+
+                                            p {
+                                                padding-left: 10px;
+                                                color: #aaa;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .service-section3{
+                            .box-shadow(@shadow-outer-gray);
+                            .bg(@color-trans-dark);
+
+                            h2{
+                                width: 80%;
+                                margin-left: 10% !important;
+                            }
+                        }
+
+                        .service-section4{
+                            h3{
+                                color: @h3-1 !important;
+                            }                            
+                            .owl-carousel{
+                                .item{
+                                    padding: 5px!important;
+                                    a{
+
+                                        img{
+                                            .bg(@t);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+//                  Designing Contact page
+//______________________________________________________________
+
+                    .main-body-contact{
+                        .contact-section1{
+                            .bg(@w-dark);
+                            .box-shadow(@shadow-outer-gray);
+                            .left{
+                                margin-bottom: 40px !important;
+
+                                .input-group{
+                                    input[type="text"], input[type="email"], textarea {
+                                        border: 1px solid @gray-light !important;
+                                        .bg(@gray-lightmost);
+                                        box-shadow: none;
+                                        border-radius: 5px;
+
+                                        &:focus{
+                                            .bg(@gray-lighter);
+                                        }
+                                    }
+                                }
+                                a{
+                                    .bg(@t);
+                                    padding: 7px 20px !important;
+                                    color: @gray !important;
+                                    border-color: @gray;
+
+                                    &:hover{
+                                        .bg(@color);
+                                        color: @w !important;
+                                        border-color: @color;
+                                    }
+                                }
+                            }
+                            .right{
+                                i{
+                                    color: @color;
+                                    margin-bottom: 20px !important;
+                                }
+                                p{
+                                    span{
+                                        font-size: 30px !important;
+                                    }
+                                }
+                            }
+                        }
+
+                        .contact-section2{
+                            .bg(@t);
+                            h2{
+                                font-size: 40px !important;
+                                color: @h2-1 !important;
+                                text-shadow: 0px 1px 1px @gray;
+                            }
+                            iframe{
+                                width: 100%;
+                                margin: 30px 0 !important;
+                                .box-shadow(@shadow-outer-gray);
+                            }
+                        }
+                    }
+
+
+//                  Designing Contact 2 page
+//______________________________________________________________
+
+                    .main-body-contact2{
+                        .contact2-section1{
+                            .bg(@w-dark);
+                            .left{
+                                border-right: 1px solid @gray-lighter;
+                                iframe{
+                                    width: 100%;
+                                    padding: 15px!important;
+                                }
+                                .input-group{
+                                    padding-left: 20px !important;
+                                    margin-bottom: 20px !important;
+
+                                    input[type="text"], input[type="email"], textarea {
+                                        border: 1px solid @gray-light !important;
+                                        .bg(@gray-lightmost);
+                                        box-shadow: none;
+                                        border-radius: 5px;
+                                        margin-left: 10px !important;
+
+                                        &:focus{
+                                            .bg(@gray-lighter);
+                                        }
+                                    }
+
+                                }
+                                a{
+                                    .bg(@t);
+                                    padding: 7px 20px !important;
+                                    color: @gray !important;
+                                    border-color: @gray;
+                                    margin-left: 5%;
+
+                                    &:hover{
+                                        .bg(@color);
+                                        color: @w !important;
+                                        border-color: @color;
+                                    }
+                                }
+                            }
+                            .right{
+
+                                ul {
+                                    li {
+                                        
+                                        display: inline-block!important;
+                                        a {
+
+                                            &:hover{
+                                                .bg(@t);
+                                            }
+                                            i {
+                                                height: 36px;
+                                                width: 36px;
+                                                .bg(@color-trans-dark);
+                                                color: @w;
+                                                margin: 5px;
+                                                border-radius: 50%;
+                                                padding: 10px;
+                                                font-size: 1.2em;
+                                                .transition(@transition-1);
+
+                                                &:hover{
+                                                    .bg(@color);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .contact2-section2{
+                            .bg(@color-trans-dark);
+                            .left{
+                                border-right: 2px solid @w; 
+                                span{
+                                    font-size: 40px !important;
+                                    margin-top: 2%;
+                                }
+                                p{
+                                    margin: 0px !important;
+                                }
+                            }
+
+                            .right{
+                                .input-group{
+                                    padding: 0px !important;
+                                    input{
+                                        border: none !important;
+                                        .bg(@gray-lightmost );
+                                        box-shadow: none;
+                                        border-radius: 5px;
+
+                                        &:focus{
+                                            .bg(@gray-lighter);
+                                        }
+                                    }
+                                }
+                                a{
+                                    .bg(@t);
+                                    border-color: @w !important;
+                                    .transition(@transition-3);
+
+                                    &:hover{
+                                        .bg(@w);
+                                        color: @color;
+                                    }
+                                }
+                            }
+                        }                        
+                    }
+
+
+//                  Designing Class page
+//______________________________________________________________
+
+                    .main-body-download{
+                        .bg(@w-dark);
+
+                        .download-section1 {
+
+                            .class-right {
+                                padding-top: 40px;
+                                padding-bottom: 40px;
+
+                                .nav-pills > li.active > a{
+                                    .bg(@color-trans-dark);
+                                }
+                                ul {
+                                    li {
+                                        a {
+                                            border-radius: 0!important;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .tab-content {
+
+                                .class-left{
+                                    h2{
+                                        margin-bottom: 40px !important;
+                                    }
+                                }
+                                
+                                .class {
+                                    border-right: 1px solid #EEE;
+
+                                    p {
+                                        margin-top: 40px;
+                                    }
+                                }
+
+                                .tutorial {
+                                    border-right: 1px solid #EEE;
+
+                                    .tutorial-box {
+                                        margin: 20px 0 !important;
+
+                                        .tutorial-image {
+                                            margin-top: 20px;
+                                        }
+
+                                        .tutorial-content {
+                                            h4 {
+                                                padding-bottom: 0px;
+
+                                                a {
+                                                    color: #333;
+                                                    .transition(@transition-1);
+
+                                                    &:hover {
+                                                        word-spacing: 2px;
+                                                        color: #000;
+                                                    }
+                                                }
+
+                                                small {
+                                                }
+                                            }
+
+                                            hr {
+                                                margin: 0px!important;
+                                            }
+
+                                            p {
+                                                padding-top: 10px;
+
+                                                span {
+                                                    color: #AAA;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .videos {
+                                    border-right: 1px solid #EEE;
+
+                                    .modal-dialog {
+                                        width: 760px!important;
+
+                                        .modal-content {
+                                            .bg(@t);
+
+                                            .modal-body {
+                                                padding: 10px!important;
+                                                z-index: 99999;
+                                            }
+                                        }
+                                    }
+
+                                    .video-tag {
+                                        margin-bottom: 20px;
+                                        figure{
+                                            position: relative;
+                                            a{
+                                                position: absolute;
+                                                left: 0;
+                                                right: 0;
+                                                top: 0;
+                                                bottom: 0;
+
+                                                .hover-div {
+                                                    background: url(../../images/glyphicons_220_play_button.png) center center no-repeat #FFF;
+                                                    background-size: 10% !important;
+                                                    position: absolute;
+                                                    left: 0;
+                                                    right: 0;
+                                                    top: 0;
+                                                    bottom: 0;
+                                                    z-index: 10;
+                                                    -webkit-box-shadow: 0px 0px 4px #000;
+                                                    -moz-box-shadow: 0px 0px 4px #000;
+                                                    box-shadow: 0px 0px 4px #000;
+
+                                                    .hover-obj {
+                                                        color: #000;
+                                                        margin-top: 10% !important;
+                                                        font-size: 30px !important;
+                                                    }
+                                                }
+                                            }
+
+                                            img {
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .audio {
+                                    border-right: 1px solid #EEE;
+
+                                    ul {
+                                        li {
+                                            .transition(@transition-1);
+                                            padding: 5px 10px;
+                                            margin-bottom: 20px !important;
+
+                                            &:hover>a {
+                                                color: @color;
+                                            }
+
+                                            a {
+                                                color: #333;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }                        
+                    }
+
+
+//                  Designing 404 page
+//______________________________________________________________
+
+                    .main-body-page404{
+                        .bg(@w-dark);
+
+                        .text-1{
+
+                        }
+                        .text-2{
+
+                        }
+                        .text-3{
+                            font-size: 15em !important;
+                        }
+                    }
+
+
+//                 Designing login page
+//______________________________________________________________
+
+                    .main-body-login{
+                        .login-content{
+                            .bg(@w-dark);
+                            padding: 30px;
+                            .login-content-header{
+                                padding-bottom: 20px;
+                                margin-bottom: 20px;
+                                border-bottom: 1px solid @color;
+                            }
+                            .login-content-body{
+                                padding-bottom: 20px;
+                                margin-bottom: 20px !important;            
+                                border-bottom: 1px solid @color;
+                                .login-content-social{
+                                    a{
+                                        i{
+                                            .bg(@color-trans-dark);
+                                            height: 45px;
+                                            width: 45px;
+                                            padding-top: 12px;
+                                            font-size: 1.6em;
+                                        }
+                                    }
+                                }
+                                .input-group{
+                                    padding: 0px !important;
+
+                                    .input-group-addon{
+                                        width: 45px;
+                                        i{
+                                            font-size: 1.6em;
+                                        }
+                                    }
+                                    input[type="text"], input[type="password"]{
+                                        width: 100% !important;
+                                        &:focus{
+                                            box-shadow: none !important;
+                                        }
+                                    }
+                                }
+
+                                input[type="checkbox"]{
+                                    margin-top: 10px;
+                                }            
+                            }
+                            .login-content-footer{
+
+                            }
+                        }    
+                    }                    
+       
+
+//                 Designing Register page
+//______________________________________________________________
+
+                    .main-body-register{
+                        .register-section1{
+                            .bg(@w-dark);
+
+                                hr{
+                                    border-top: 1px solid @gray-light;
+                                }
+                            .form-group{
+
+                                .input-col{
+                                    margin-bottom: 20px !important;
+                                    p{
+                                        color: @p-2 !important;
+                                        padding-top: 5px !important;
+                                    }
+                                    input, textarea{
+                                        border: 1px solid @gray !important;
+                                        .bg(@w );
+                                        box-shadow: none;
+                                        border-radius: 5px;
+
+                                        &:focus{
+                                            border: 2px solid @color !important;
+                                        }
+                                    }
+                                    input[type="checkbox"], input[type="radio"]{
+                                        margin-top: 10px !important;
+                                    }
+                                }
+                            }
+                            .btn{
+                                padding: 6px 40px !important;
+                            }
+                            .text-right{
+                                p{
+                                    color: @p-2 !important;
+                                    font-size: 1.3em !important;
+                                }
+                            }
+                        }
+                    }
+
+
+//                  Designing terms page
+//______________________________________________________________
+
+                    .main-body-terms{
+                        .terms-section1{
+                            .bg(@w-dark);
+                            padding-left: 100px !important;
+                            p{
+                                width: 80%;
+                            }   
+                            h3{
+
+                            }
+                        }
+                    }
+
+
+//                  Designing privacy page
+//______________________________________________________________
+
+                    .main-body-privacy{
+                        .privacy-section1{
+                            .bg(@w-dark);
+                            padding-left: 100px !important;
+                            p{
+                                width: 80%;
+                            }   
+                            h3{
+
+                            }
+                        }
+                    }
+
+
+//                 Designing Footer
+//______________________________________________________________
+
+                    footer {
+                        .bg(@b-dark);
+
+                        .footer-body{
+                            border-bottom: 1px solid @gray-lighter;
+
+                            .left{
+                                border-right: 2px solid @w; 
+
+                                span{
+                                    font-size: 40px !important;
+                                    margin-top: 5%;
+                                    color: @color;
+                                }
+                                h3{
+                                    color: @gray-lighter !important;
+                                }
+                                p{
+                                    margin: 0px !important;
+                                    color: @gray-light !important;
+                                }
+                            }
+                            .right{
+                                h3{
+                                    color: @gray-lighter !important;
+                                }
+                                .input-group{
+                                    padding: 0px !important;
+                                    margin-bottom: 20px;
+                                    input{
+                                        border: none !important;
+                                        .bg(@gray-lightmost );
+                                        box-shadow: none;
+                                        border-radius: 3px 0 0 3px;
+
+                                        &:focus{
+                                            .bg(@gray-lighter);
+                                        }
+                                    }
+                                }
+                                a{
+                                    .bg(@t);
+                                    padding: 6px 20px !important;
+                                    border-radius: 0 3px 3px 0;
+                                    border-color: @w !important;
+                                    color: @w !important;
+                                    .transition(@transition-3);
+
+                                    &:hover{
+                                        .bg(@w);
+                                        color: @color !important;
+                                    }
+                                }
+                            }
+                        }
+
+                        .footer-bottom{
+                            p{
+                                padding: 20px;
+                                color: @gray-light;
+                               
+                                a{
+                                    color: #CCC;
+                                    
+                                    &:hover{
+                                        color: @color;
+                                    }
+                                }
+                            }
+                            ul{
+                                padding: 20px;
+                                li{
+                                    list-style-type: none;
+                                    display: inline-block;
+                                    padding-left: 20px;
+                                    a{
+                                        color: #999;
+                                        font-size: 14px!important;
+                                        
+                                        &:hover{
+                                            color: #AAA;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/*********** Designing with Media queries
+**************************************************/
+
+//  Media query for lg size devices
+@media screen and (min-width: 1200px){
+
+    .home{      
+    .st-container{
+
+        .cbp-hrmenu .cbp-hrsub{
+            min-width: 1000px !important;
+        }
+        .cbp-hrmenu .cbp-hrsub-inner > div {
+            width: 25%;
+        }        
+
+    .main-body, .main-body-gallary{
+
+        .square, .carousel-inner1 {
+            height: 290px!important;
+            padding: 6px!important;
+        }
+
+        .square2 {
+            height: 580px !important;
+            padding: 6px !important;
+        }
+        .square-img{
+            height: 72px !important;
+            padding: 0px!important;
+        }
+        .square2-img{
+            height: 145px !important;
+            padding: 0px !important;
+        }
+        .square-icon {
+            height: 70px!important;  
+        }
+        .box {
+            h2{
+                font-size: 2.7em !important;
+            }
+            p{
+                font-size: 1.4em !important;
+                letter-spacing: 1px;                
+            }
+        }
+        .box-type2{
+            h2{
+                line-height: 1.9em !important;
+            }
+        }
+    }
+
+    .pricing-section-1{
+        margin-left: 12% !important;
+    }
+
+
+    }
+    }        
+}
+
+
+//  Media query for md size devices
+@media screen and (max-width: 1200px) and (min-width: 993px) {
+
+    .home{
+    .st-container{
+
+
+        .main-body, .main-body-gallary{    
+           
+            .square{
+                height: 235px!important;
+                padding: 6px!important;
+            }
+            .carousel-inner1{
+                height: 218px!important;
+            }
+
+            .square2{
+                height: 470px;
+                padding: 6px!important;
+            }
+            .square-img{
+                height: 58px;
+                padding: 0px!important;
+            }
+            .square2-img{
+                height: 115px;
+                padding: 0px!important;
+            }
+            .square-icon {
+                height: 56px!important;  
+            }
+
+            .box {
+                h2{
+                    font-size: 2.1em !important;
+                }
+            }
+            .box-type2{
+                h2{
+                    line-height: 2em !important;
+                }
+            }            
+
+        }
+
+        #sequence .animate-in .slide-p, #sequence .animate-in .slide-q, #sequence .animate-in .slide-r {
+            width: 45% !important;
+            h3{
+                font-size: 23px !important;
+            }
+        }
+
+        .st-menu{
+            ul{
+                li{
+                    a{
+                        font-size: 20px !important;
+                        line-height: 30px !important;
+                    }
+                }
+            }
+        }
+
+
+
+    }
+    }  
+}
+
+
+//  Media query for sm size devices
+@media screen and (max-width: 992px) and (min-width: 767px) {
+
+    .home{
+        font-size: 1.2em !important; 
+        p{
+            width: 100% !important;
+        }
+
+    .st-container{
+
+    .main-body, .main-body-gallary{
+
+    
+    .square-teampics{
+        .bg(@t);
+        .box-teampics{
+            ul{
+                li{
+                    img{
+                        height: auto;
+                        padding: 12px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .square, .carousel-inner1 {
+        height: 184px!important;
+        padding: 6px!important;
+    }
+
+    .square2 {
+        height: 368px!important;
+        padding: 6px!important;
+    }
+    .square-img{
+        height: 90px!important;
+        padding: 6px!important;
+    }
+    .square2-img{
+        height: 87px;
+        padding: 0px!important;
+    }          
+    .square-icon {
+        height: 90px!important;  
+    }
+    .box {
+        h2{
+            font-size: 1.8em !important;
+        }
+        p{
+            font-size: 1em !important;
+            letter-spacing: 1px;                
+        }
+    }
+    .box-type2{
+        h2{
+            line-height: 2em !important;
+        }
+    }     
+
+    }
+
+
+    }
+    }    
+}
+
+
+//  Media query for xs size devices
+@media screen and (max-width: 768px) {
+
+    .home{
+        p{
+            width: 100% !important;
+        }
+        .container{padding-right: 15px!important;padding-left: 15px!important;}
+
+        img{
+            padding: 0 !important;
+        }
+
+        .message_body p{
+            padding: 0 !important;
+        }
+
+        .st-container{
+            .st-pusher{
+
+
+                .testimonial-list{
+                    a{
+                        line-height: 1em !important;
+                    }
+                }
+
+                .slider{
+                    .listone-1, .listone-2, .listone-3, .listtwo-5, .listtwo-6, .listtwo-7, .listtwo-8, .listthree-1, .listthree-2{
+                        width: 83% !important;
+                    }
+                    .listone-4, .listtwo-1, .listtwo-2, .listtwo-3, .iphone2, .iphone3, .iphone4{
+                        opacity: 0 !important;
+                    }
+                    .listtwo-4{width: 100% !important; left: 30px !important;}
+                    .animate-in .listtwo-5{left: 70px !important;}
+                    .animate-in .listtwo-6{left: 90px !important;}
+                    .animate-in .listtwo-7{left: 110px !important;}
+                    .animate-in .listtwo-8{left: 130px !important;}
+                }
+
+                .main-body, .main-body-gallary{
+                
+                    .square-teampics{
+                        .bg(@t);
+                        .box-teampics{
+                            ul{
+                                li{
+                                    img{
+                                        height: auto;
+                                        padding: 12px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .square-testimonial{
+                        img{
+                            padding-bottom: 10px!important;
+                        }
+                    }
+
+                    .square-img{
+                        height: 120px;
+                        padding: 6px!important;
+                    }
+                    .square2-img{
+                        height: 120px;
+                        padding: 6px!important;
+                    }
+                    .square-icon {
+                        height: 56px!important;  
+                    }
+
+                    .square, .carousel-inner1 {
+                        height: 240px!important;
+                        padding: 6px 12px 6px 0 !important;
+                    }
+
+                    .square2 {
+                        height: 480px !important;
+                        padding: 6px 12px 6px 0 !important;
+                    }
+                    .box {
+                        h2{
+                            font-size: 2em !important;
+                        }
+                    }                
+                    .box-news{
+                        img{
+                            width: 115% !important;
+                        }
+                    }
+                    .box-type2 {
+                        h2{
+                            line-height: 1.5em !important;
+                        }
+                    }
+                }
+
+                .portfolio-nav{
+                    ul{
+                        li{
+                            width: 150px !important;
+                        }
+                    }
+                }
+
+                .blog2-text{
+                    ul{
+                        li{
+                            margin-right: 1.2em !important;
+                        }
+                    }
+                }
+        
+
+            }   // st-pusher
+        }   // st-container
+    }
+}
